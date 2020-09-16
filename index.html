@@ -9,7 +9,7 @@
     <meta name="keywords" content="Seth Polyniak,Seth,Polyniak, developer, portfolio">
     <meta name="author" content="Seth Polyniak">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>  
   
   <header>    
@@ -29,10 +29,10 @@
 
                 <h2 class='header'>Hi,<br>I'm Seth.</h2>
                 <ul class="ul-skills">
-                    <li class="skill-item">Javascript</li>
-                    <li class="skill-item">HTML/CSS</li>
-                    <li class="skill-item">Swift</li>
                     <li class="skill-item">Java</li>
+                    <li class="skill-item">Python</li>
+                    <li class="skill-item">Swift</li>
+                    <li class="skill-item">Javascript</li>
                 </ul>
 
 <!--                <button class="btn-projects">View Projects</button>-->
@@ -46,29 +46,43 @@
                     <h3 class="div-subheader experience-header">Experience</h3>
                     <p class='p-about'><b>&#8226; iOS Application Developer Intern</b> at <em>County College of Morris</em> from December 2018 to December 2019.</p>
                     <h3 class="div-subheader education-header">Education</h3>
-                    <p class='p-about'>I have an <b>AS in Computer Science</b> from County College of Morris, and I am currently pursuing my <b>BS in Computer
-                        Science</b> at Western Governors University.</p>
+                    <p class='p-about'>I graduated in September 2020 with a <b>BS in Computer
+                        Science</b> from Western Governors University.</p>
                 </div>
                 
                 <ul class="div-skills">
-                   <li class="skill">Javascript</li>
-                   <li class="skill">HTML/CSS</li>
+                   <li class="skill">Java</li>
+                   <li class="skill">Python</li>
                    <li class="skill">Swift</li>
+                   <li class="skill">Javascript</li>
                    <li class="skill">Xcode</li>
+                   <li class="skill">HTML/CSS</li>
                    <li class="skill">jQuery</li>
                    <li class="skill">node.js</li>
                    <li class="skill">Spotify Web API</li>
                    <li class="skill">Dropbox API</li>
+                   <li class="skill">Firebase</li>
                 </ul>
             </div>
             
             <div class='div-projects'>
                 <h1 id="projects-header"class="div-header projects-header">My projects</h1>
-                <div class="projects-container">
+                <h3 class="div-subheader project-title">Turntabler.com</h3>
+                <p class="p-about project-desc">A node.js website that dynamically creates virtual vinyl records based off what Spotify artist the user searches for.</p>
+                <button id="project-turntabler" onclick='showProject(this.id)' class="btn-project">Learn More</button>
+
+                <h3 class="div-subheader project-title">DailyOreo.com</h3>
+                <p class="p-about project-desc">A real-time Oreo cookie consumption counter built with Javascript and Firebase.</p>
+                <button id="project-dailyoreo" onclick='showProject(this.id)' class="btn-project">Learn More</button>
+
+                <h3 class="div-subheader project-title">Automated Chicken Coop</h3>
+                <p class="p-about project-desc">An embedded project that fully automates the heat lamps, fan, and door to a chicken coop using an Arduino Microcontroller and the C programming language.</p>
+                <button id="project-chickencoop" onclick='showProject(this.id)' class="btn-project">Learn More</button>
+                <!-- <div class="projects-container">
                     <img id="project-transit" class="project" onclick='showProject(this.id)'src="header_capsule.png">
                     <img id="project-turntabler"class="project" onclick='showProject(this.id)'src="turntabler_snip.png">
                     <img id="project-memjars"class="project" onclick='showProject(this.id)'src="memjars.PNG">
-                </div>
+                </div>  -->
             </div>
             
             <div class="div-contact">
