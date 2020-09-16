@@ -145,6 +145,7 @@ ul {
     width: 70%;
     padding-top: 130px;
     padding-left: 100px;
+    margin-bottom: 75px; 
     
     font-size: 72px;
     color: #000;
@@ -199,13 +200,13 @@ ul {
 
 .div-projects {
     background-color: #444;
-        transition: .2s ease;
-
+    transition: .2s ease;
 }
 
 .projects-header {
     color: var(--header-color);
     padding-top: 200px;
+    margin-bottom: 75px;
 }
 
 .projects-container {
@@ -225,6 +226,33 @@ ul {
 .project:hover {
     opacity: .5;
     cursor: pointer;
+}
+.project-title{
+    color: #ff8d8d;
+}
+.project-desc{
+    width: 60%;
+
+    color: var(--subheading-color);
+}
+.btn-project {
+    padding: 6px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    width: 150px;
+    
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: var(--subheading-color);
+    font-size: 20px;
+    outline: none;
+}
+
+
+.btn-project:hover {
+    cursor: pointer;
+    background-color: #ff8d8d;
 }
 
 /* The Modal (background) */
@@ -246,16 +274,16 @@ ul {
 .modal-content {
   background-color: var(--white-background);
   margin: auto;
+  margin-top: -35px;
   padding: 0;
   border: none;
   width: 50%;
   min-width: 600px;
-  margin-top: -80px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Add Animation */
@@ -294,7 +322,12 @@ ul {
 }
 
 .modal-img {
-    width: 100%;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 5px;
+
 }
 
 .modal-heading {
@@ -369,7 +402,7 @@ ul {
 
 .img-icon:hover {
     cursor: pointer;
-    filter: invert(0%) sepia(4%) saturate(16%) hue-rotate(139deg) brightness(94%) contrast(105%);
+    width: 72px;
 }
 
 footer {
@@ -413,7 +446,7 @@ footer {
          font-size: 18px;
      }
      
-     .btn-projects {
+     .btn-project {
          margin-left: 50px;
      }
      
@@ -426,7 +459,7 @@ footer {
          clear: both;
      }
      
-     .about-sections {
+     .about-sections, .project-desc {
          width: 85%;
      }
      
@@ -450,6 +483,7 @@ footer {
      }
      
      .skill {
+         font-size: 16px;
      }
      
      .project {
